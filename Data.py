@@ -14,7 +14,7 @@ I can also be used in groups !!
 To see `Supported Media Types` tap the related button below.
 Use the other buttons to know more about me and my usage.
 
-By @StarkBots
+By @M2Botz
     """
 
     # Help Message
@@ -37,24 +37,25 @@ That is,
 
 __Note__ : If the bot doesn't respond in the expected way, make the bot admin so that bot gets updates for sure. Telegram is weird.
 
-More features in development. Keep track by joining @StarkBots.
+More features in development. Keep track by joining @M2Botz.
+
+Made With ❤️ By @M2Botz
     """
 
     # About Message
     ABOUT = """
 **About This Bot** 
 
-Bot created by @StarkBots
+Bot Name : Telegraph Uploader
 
-Source Code : [Click Here](https://github.com/StarkBotsIndustries/TelegraphBot)
+Source Code : [Releasing Soon](https://t.me/m2botz)
 
-Framework : [Pyrogram](docs.pyrogram.org)
+Updates Channel : [Click Here](https://t.me/m2botz)
 
-Language : [Python](www.python.org)
+Support Group : [Click Here](https://t.me/m2botzsupport)
 
-Developer : @StarkProgrammer
+Developer : [M2](https://t.me/M2_TelegraphUploader_Bot)
 
-Support : @StarkBotsChat
     """
 
     SUPPORTED_MEDIA_TYPES = """
@@ -75,7 +76,7 @@ Note : Telegraph has a size limit of 5 MB.
         [InlineKeyboardButton("✨ Bot Status and More Bots ✨", url="https://t.me/StarkBots/7")],
         [InlineKeyboardButton("🎇 Supported Media Types 🎇", callback_data="supported_media_types")],
         [InlineKeyboardButton("Close 🔐", callback_data="close")],
-        [InlineKeyboardButton(text="🏠 Return Home 🏠", callback_data="home")],
+        [InlineKeyboardButton(text=Home 🏠", callback_data="home")],
     ]
 
     # Rest Buttons
