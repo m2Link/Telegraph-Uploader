@@ -109,12 +109,3 @@ Note : Telegraph has a size limit of 5 MB.
         [InlineKeyboardButton("Close 🔐", callback_data="close")],
         [InlineKeyboardButton(text="🏠Home", callback_data="home")]
     ]
-
-    # Telegraph
-    telegraph = [
-                [
-                    InlineKeyboardButton(text="Open Link", url=f"https://telegra.ph{response[0]}"),
-                    InlineKeyboardButton(text="Share Link", url=f"https://telegram.me/share/url?url=https://telegra.ph{response[0]}")
-                ],
-                [InlineKeyboardButton(text="⚙ Join Updates Channel ⚙", url="https://telegram.me/FayasNoushad")]
-            ]
