@@ -2,11 +2,6 @@ import os
 import requests
 from PIL import Image
 from pyrogram.types import Message
-from Data import Data
-from pyrogram import Client, filters
-from pyrogram.types import InlineKeyboardMarkup
-
-
 
 extensions = ["jpg", "jpeg", "png", "gif", "mp4"]
 size_limit = 5242880
@@ -82,16 +77,5 @@ async def upload(file):
     if error:
         url = error
     else:
-        url = "https://telegra.phresponse[0].get("src")
+        url = "https://telegra.ph" + response[0].get("src")
     return url
-
-
-# Telegraph
-@Client.on_message(filters.private & filters.incoming & filters.command("telegraph"))
-async def _help(bot, msg):
-    await bot.send_message(
-        msg.chat.id,
-        Data.telegraph,
-        reply_markup=InlineKeyboardMarkup(Data.telegraph),
-        reply_to_message_id=msg.message_id
-    )
