@@ -79,12 +79,14 @@ async def upload(file):
     else:
         url = "https://telegra.ph" + response[0].get("src")
     return url
-#Telegraph
-@Client.on_message(filters.private & filters.incoming & filters.command("help"))
+
+
+# Telegraph
+@Client.on_message(filters.private & filters.incoming & filters.command("telegraph"))
 async def _help(bot, msg):
     await bot.send_message(
         msg.chat.id,
-        Data.HELP,
-        reply_markup=InlineKeyboardMarkup(Data.home_buttons),
+        Data.telegraph,
+        reply_markup=InlineKeyboardMarkup(Data.telegraph),
         reply_to_message_id=msg.message_id
     )
