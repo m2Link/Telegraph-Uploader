@@ -77,14 +77,5 @@ async def upload(file):
     if error:
         url = error
     else:
-        url = "https://telegra.ph{response[0]}</code>\n\n<b>Join :-</b> @FayasNoushad",
-        disable_web_page_preview=True,
-        reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton(text="Open Link", url=f"https://telegra.ph{response[0]}"),
-                    InlineKeyboardButton(text="Share Link", url=f"https://telegram.me/share/url?url=https://telegra.ph{response[0]}")
-                ],
-                [InlineKeyboardButton(text="⚙ Join Updates Channel ⚙", url="https://telegram.me/FayasNoushad")]
-            ]
-        )
+        url = "https://telegra.ph" + response[0].get("src")
+    return url
