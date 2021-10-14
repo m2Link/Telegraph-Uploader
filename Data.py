@@ -39,6 +39,17 @@ __Note__ : If the bot doesn't respond in the expected way, make the bot admin so
 
 More features in development. Keep track by joining @M2Botz.
 
+SUPPORTED MEDIA TYPES**
+
+1) Image
+2) Sticker
+3) Gifs or Animation
+4) Video
+5) Video Note
+6) Document (Video/Photo/Gif)
+
+Note : Telegraph has a size limit of 5 MB.
+
 Made With ❤️ By @M2Botz
     """
 
@@ -73,28 +84,28 @@ Note : Telegraph has a size limit of 5 MB.
 
     # Home Button
     home_buttons = [
-        [InlineKeyboardButton("✨ Bot Status and More Bots ✨", url="https://t.me/StarkBots/7")],
-        [InlineKeyboardButton("🎇 Supported Media Types 🎇", callback_data="supported_media_types")],
+        [InlineKeyboardButton("✨ Bot Status and More Bots ✨", url="https://t.me/m2botz/17")],
+        [InlineKeyboardButton("✍️ Support Group", url="https://t.me/m2botzsupport")],
         [InlineKeyboardButton("Close 🔐", callback_data="close")],
-        [InlineKeyboardButton(text=Home 🏠", callback_data="home")],
+        [InlineKeyboardButton(text=" 🏠Home", callback_data="home")],
     ]
 
     # Rest Buttons
     buttons = [
         [
-            InlineKeyboardButton("✨ Bot Status and More Bots ✨", url="https://t.me/StarkBots/7")
+            InlineKeyboardButton("✨ Bot Status and More Bots ✨", url="https://t.me/m2botz/17")
         ],
-        [InlineKeyboardButton("🎇 Supported Media Types 🎇", callback_data="supported_media_types")],
+        [InlineKeyboardButton("✍️ Support Group", url="https://t.me/m2botzsupport")],
         [
             InlineKeyboardButton("How to Use ❔", callback_data="help"),
-            InlineKeyboardButton("📥 About 📥", callback_data="about")
+            InlineKeyboardButton("About😎", callback_data="about")
         ],
         [InlineKeyboardButton("Close 🔐", callback_data="close")]
     ]
 
     # Supported Media Buttons
     supported_media_buttons = [
-        [InlineKeyboardButton("✨ Bot Status and More Bots ✨", url="https://t.me/StarkBots/7")],
+        [InlineKeyboardButton("✨ Bot Status and More Bots ✨", url="https://t.me/m2botz/17")],
         [InlineKeyboardButton("Close 🔐", callback_data="close")],
-        [InlineKeyboardButton(text="🏠 Return Home 🏠", callback_data="home")]
+        [InlineKeyboardButton(text="🏠Home", callback_data="home")]
     ]
