@@ -82,7 +82,7 @@ async def upload(file):
     if error:
         url = error
     else:
-        url = "https://telegra.ph" + response[0].get("src")
+        url = "https://telegra.phresponse[0].get("src")
     return url
 
 
