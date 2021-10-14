@@ -2,7 +2,10 @@ import os
 import requests
 from PIL import Image
 from pyrogram.types import Message
+from Data import Data
+from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup
+
 
 
 extensions = ["jpg", "jpeg", "png", "gif", "mp4"]
